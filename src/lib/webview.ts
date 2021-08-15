@@ -1,3 +1,3 @@
-import vkConnect from '@vkontakte/vk-connect';
+import vkBridge from '@vkontakte/vk-bridge';
 
-export const isWebView: boolean = vkConnect.isWebView();
+export const isWebView: boolean = vkBridge.isWebView();

@@ -1,13 +1,12 @@
 {
-  "name": "@vkontakte/vkui",
+  "name": "37bytes-vkui",
   "version": "2.34.1",
   "main": "dist/index.js",
   "module": "dist/es6/index.js",
   "typings": "dist/index.d.ts",
   "license": "MIT",
   "description": "VKUI library",
-  "repository": "https://github.com/VKCOM/VKUI",
-  "homepage": "https://vkcom.github.io/vkui-styleguide",
+  "repository": "https://github.com/37bytes/VKUI",
   "defaultSchemeId": "client_light",
   "sideEffects": [
     "./dist/lib/polyfills.js",
@@ -33,7 +32,6 @@
     "@typescript-eslint/parser": "^2.2.0",
     "@vkontakte/appearance": "https://github.com/VKCOM/Appearance#v2.3.6",
     "@vkontakte/icons": "^1.8.3",
-    "@vkontakte/vk-connect": "^1.5.5",
     "autoprefixer": "^7.2.3",
     "babel-loader": "^8.0.4",
     "classnames": "^2.2.6",
@@ -77,7 +75,6 @@
   "peerDependencies": {
     "@babel/runtime": "^7.5.5",
     "@vkontakte/icons": "^1.8.3",
-    "@vkontakte/vk-connect": "^1.5.5",
     "prop-types": "^15.6.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
@@ -103,5 +100,8 @@
   },
   "pre-commit": [
     "test"
-  ]
+  ],
+  "dependencies": {
+    "@vkontakte/vk-bridge": "^2.4.8"
+  }
 }

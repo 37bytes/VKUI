@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import vkConnect from '@vkontakte/vk-connect';
+import vkBridge from '@vkontakte/vk-bridge';
 import { HasChildren } from '../../types/props';
 import { canUseDOM } from '../../lib/dom';
 
@@ -28,7 +28,7 @@ export default class ConfigProvider extends React.Component<ConfigProviderProps>
 
   static defaultProps = {
     webviewType: 'internal',
-    isWebView: vkConnect.isWebView(),
+    isWebView: vkBridge.isWebView(),
     scheme: 'client_light'
   };
 
